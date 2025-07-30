@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ThemeProvider } from '../../../contexts/ThemeContext';
-import { SelectorButton } from './selectorButton.view';
+import { SelectorButton } from './SelectorButton.view';
 
 describe('SelectorButton', () => {
   beforeEach(() => {

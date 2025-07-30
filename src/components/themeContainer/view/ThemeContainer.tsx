@@ -3,7 +3,7 @@ import '../../../styles/themes/light.css';
 import '../../../styles/themes/dark.css';
 import '../../../styles/themes/purple.css';
 import { useTheme } from '../../../contexts/useTheme';
-import { SelectorButton } from '../../selectorButton/view/selectorButton.view';
+import { SelectorButton } from '../../selectorButton/view/SelectorButton.view';
 
 interface Props {
   children: ReactNode;

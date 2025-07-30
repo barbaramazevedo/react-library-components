@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "jest"
   },
   "dependencies": {
