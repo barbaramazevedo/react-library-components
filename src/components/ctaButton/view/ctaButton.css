@@ -1,0 +1,131 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 8px;
+  cursor: pointer;
+  color: white;
+
+  &.secondary {
+    border: none;
+    font-weight: 700;
+  }
+
+  .light & {
+    &.primary {
+      background-color: var(--white-color);
+      border: 1px solid var(--grafite-color);
+      color: var(--black-color);
+
+      &:hover {
+        background-color: var(--grafite-color);
+        border: 1px solid var(--grafite-color);
+        color: var(--white-color);
+      }
+    }
+
+    &.secondary {
+      background-color: var(--light-blue-color);
+
+      &:hover {
+        background-color: var(--grafite-color);
+      }
+    }
+
+    &.disable {
+      background-color: var(--gray-color);
+    }
+
+    &.btn-close {
+      background-color: transparent !important;
+      color: inherit !important;
+    }
+  }
+
+  .dark & {
+    &.primary {
+      background-color: transparent;
+      border: 1px solid var(--white-color);
+      color: var(--white-color);
+      &:hover {
+        background-color: var(--white-color);
+        color: var(--black-color);
+      }
+    }
+
+    &.secondary {
+      background-color: var(--lemon-color);
+      color: var(--black-color);
+      &:hover {
+        background-color: var(--white-color);
+        color: var(--black-color);
+      }
+    }
+
+    &.disable {
+      background-color: var(--gray-color);
+    }
+
+    &.btn-close {
+      background-color: transparent !important;
+      color: inherit !important;
+    }
+  }
+
+  .purple & {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+
+    &.primary {
+      background-color: transparent;
+      border: 1px solid var(--purple-color);
+      color: var(--purple-color);
+
+      &:hover {
+        background-color: var(--purple-color);
+        color: var(--white-color);
+      }
+    }
+
+    &.secondary {
+      background-color: var(--dark-purple-color);
+
+      &:hover {
+        background-color: var(--purple-color);
+      }
+    }
+
+    &.disable {
+      background-color: var(--gray-color);
+    }
+
+    &.btn-close {
+      background-color: transparent !important;
+      color: inherit !important;
+    }
+  }
+}
+
+.disable {
+  cursor: not-allowed;
+}
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 10;
+}

@@ -1,0 +1,7 @@
+.dark {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}

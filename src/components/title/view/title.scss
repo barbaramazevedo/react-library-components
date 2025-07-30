@@ -1,0 +1,54 @@
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+  display: block;
+
+  .dark & {
+    color: var(--white-color);
+  }
+
+  .light & {
+    color: var(--black-color);
+  }
+
+  .purple & {
+    color: var(--dark-purple-color);
+  }
+}
+
+.dark h1.title,
+.dark h2.title,
+.dark h3.title {
+  color: var(--lemon-color);
+}
+
+.light h1.title,
+.light h2.title,
+.light h3.title {
+  color: var(--light-blue-color);
+}
+.purple h1.title,
+.purple h2.title,
+.purple h3.title {
+  color: var(--purple-color);
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 400;
+
+  .dark & {
+    color: var(--white-color);
+  }
+
+  .light & {
+    color: var(--black-color);
+  }
+
+  .purple & {
+    color: var(--black-color);
+  }
+}

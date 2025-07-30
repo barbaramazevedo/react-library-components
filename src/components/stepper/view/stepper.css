@@ -1,0 +1,81 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  input {
+    margin-top: 0.3rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      .dark & {
+        border-color: var(--lemon-color);
+      }
+
+      .light & {
+        border-color: var(--light-blue-color);
+      }
+
+      .purple & {
+        border-color: var(--purple-color);
+      }
+    }
+  }
+}
+
+.stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #cbc4cb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  transition: width 0.3s ease;
+
+  .dark & {
+    background-color: var(--lemon-color);
+  }
+
+  .light & {
+    background-color: var(--light-blue-color);
+  }
+
+  .purple & {
+    background-color: var(--purple-color);
+  }
+}
+
+.step-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.step-content {
+  padding: 1rem 0;
+}
+
+.step-buttons {
+  display: flex;
+  gap: 1rem;
+}

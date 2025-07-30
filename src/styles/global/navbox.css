@@ -1,0 +1,44 @@
+.nav-header {
+  padding: 16px;
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  gap: 8px;
+
+  & a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex: 1 1 30%;
+    max-width: 200px;
+  }
+
+  & a:hover {
+    .light & {
+      background-color: var(--light-blue-color);
+      color: var(--white-color);
+    }
+    .dark & {
+      background-color: var(--lemon-color);
+      color: var(--black-color);
+    }
+    .purple & {
+      background-color: var(--lilac-color);
+      color: var(--black-color);
+    }
+  }
+}

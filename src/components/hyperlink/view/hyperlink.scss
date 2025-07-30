@@ -1,0 +1,81 @@
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+
+  .dark & {
+    color: var(--white-color);
+  }
+  .light & {
+    color: var(--grafite-color);
+  }
+  .purple & {
+    color: var(--purple-color);
+  }
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+a:active {
+  transform: scale(0.85);
+}
+
+a[data-disable='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.font-small {
+  font-size: 10px;
+}
+
+.font-regular {
+  font-size: 16px;
+}
+
+.font-big {
+  font-size: 30px;
+}
+
+a[data-icon]::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+  .dark & {
+    color: var(--lemon-color);
+  }
+  .light & {
+    color: var(--light-blue-color);
+  }
+  .purple & {
+    color: var(--dark-purple-color);
+  }
+}
+
+a[data-icon='ok']::before {
+  content: '✓';
+}
+
+a[data-icon='alert']::before {
+  content: '⚠';
+}
+
+a[data-icon='danger']::before {
+  content: '!';
+}
+
+a[data-icon='disable']::before {
+  content: '⊘';
+}

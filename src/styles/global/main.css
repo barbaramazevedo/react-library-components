@@ -1,0 +1,25 @@
+:root {
+  --white-color: #f5f5f5;
+  --black-color: #333;
+  --purple-color: #b700ff;
+  --lilac-color: #e4e2e6;
+  --light-purple-color: #d6ccdd;
+  --dark-purple-color: #6a3694;
+  --grafite-color: #686868;
+  --light-gray-color: #fff;
+  --gray-color: #c4c4c4;
+  --lemon-color: #deff06;
+  --light-blue-color: #2b90fc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+.todo-item-view {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  cursor: pointer;
+
+  &:hover {
+    .dark & {
+      color: #deff06;
+    }
+
+    .light & {
+      color: #2b90fc;
+    }
+
+    .purple & {
+      color: var(--purple-color);
+    }
+  }
+}
+
+.todo-item-text {
+  font-size: 1rem;
+  transition: color 0.2s;
+
+  &.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+}

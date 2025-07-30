@@ -1,0 +1,27 @@
+.movieCard {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.light .movieCard {
+  background: var(--light-gray-color);
+}
+
+.dark .movieCard {
+  background: var(--grafite-color);
+}
+
+.purple .movieCard {
+  background: var(--lilac-color);
+}
+
+.image {
+  width: 100%;
+  max-width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+}
