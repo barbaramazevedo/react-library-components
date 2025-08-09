@@ -21,11 +21,11 @@ import { ThemeContainer } from './components/themeContainer/view/ThemeContainer'
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/react-library-components">
         <ThemeContainer>
           <Header />
           <Routes>
-            <Route path="/" element={<Navigate to="/ctabutton" />} />
+            <Route path="/" element={<Navigate to="/card-rating" />} />
             <Route path="/ctabutton" element={<PageCtaButton />} />
             <Route path="/hyperlink" element={<PageHyperlink />} />
             <Route path="/modal" element={<PageModal />} />
