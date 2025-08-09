@@ -21,7 +21,7 @@ import { ThemeContainer } from './components/themeContainer/view/ThemeContainer'
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/react-library-components">
+      <Router>
         <ThemeContainer>
           <Header />
           <Routes>
