@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export function Header() {
   return (
     <header className="nav-header">
-      <Title elementType="h3" text="React Context Api" id="h3" />
+      <Title elementType="h3" text="React Library Components" id="h3" />
       <nav className="nav-container">
         <Link
           to="/ctabutton"
